@@ -1,9 +1,9 @@
-import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { InvoiceModel } from "./invoice.model";
 import { CustomerService } from "src/customer/customer.service";
 import { Repository } from "typeorm";
 import { CreateInvoiceDTO } from "./invoice.dto";
+import { Injectable } from "@nestjs/common/decorators/core/injectable.decorator";
 
 @Injectable()
 export class InvoiceService {

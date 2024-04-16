@@ -1,9 +1,9 @@
 import { CustomerModel } from "src/customer/customer.model";
 import { Resolver, Mutation, Args, Query, ResolveField, Parent} from '@nestjs/graphql'
-import { Inject } from "@nestjs/common";
 import { InvoiceModel } from "src/invoice/invoice.model";
 import { CustomerService } from "./customer.service";
 import { InvoiceService } from "src/invoice/invoice.service";
+import { Inject } from "@nestjs/common/decorators/core/inject.decorator";
 
 @Resolver(of => CustomerModel)
 export class CustomerResolver {
