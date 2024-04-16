@@ -1,4 +1,4 @@
-import { CustomerModel } from "./customer.model"
+import { CustomerModel } from "../customer/customer.model"
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, JoinColumn, ManyToOne, ChildEntity } from 'typeorm'
 import { ObjectType, Field } from '@nestjs/graphql'
 
