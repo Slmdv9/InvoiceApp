@@ -3,6 +3,7 @@ import { InjectRepository } from "@nestjs/typeorm";
 import { InvoiceModel } from "./invoice.model";
 import { CustomerService } from "src/customer/customer.service";
 import { Repository } from "typeorm";
+import { CreateInvoiceDTO } from "./invoice.dto";
 
 @Injectable()
 export class InvoiceService {
