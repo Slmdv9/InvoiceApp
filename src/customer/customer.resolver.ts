@@ -3,7 +3,7 @@ import { Resolver, Mutation, Args, Query, ResolveField, Parent} from '@nestjs/gr
 import { InvoiceModel } from "src/invoice/invoice.model";
 import { CustomerService } from "./customer.service";
 import { InvoiceService } from "src/invoice/invoice.service";
-import { Inject } from "@nestjs/common/decorators/core/inject.decorator";
+import { Inject } from "@nestjs/common";
 
 @Resolver(of => CustomerModel)
 export class CustomerResolver {

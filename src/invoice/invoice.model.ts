@@ -55,7 +55,7 @@ export class InvoiceModel {
     currency: Currency
     @Field()
     @Column()
-    textRate: number
+    taxRate: number
     @Field()
     @Column()
     issueDate: string
@@ -75,7 +75,7 @@ export class InvoiceModel {
     items: Item[]
     @Column()
     @Field()
-    textAmount: number
+    taxAmount: number
     @Column()
     @Field()
     subTotal: number

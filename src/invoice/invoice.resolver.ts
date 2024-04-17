@@ -1,6 +1,6 @@
 import { Args, Mutation, Parent, Query, ResolveField, Resolver } from "@nestjs/graphql";
 import { InvoiceModel } from "./invoice.model";
-import { Inject } from "@nestjs/common/decorators/core/inject.decorator";
+import { Inject } from "@nestjs/common";
 import { InvoiceService } from "./invoice.service";
 import { CustomerService } from "src/customer/customer.service";
 import { CustomerModel } from "src/customer/customer.model";

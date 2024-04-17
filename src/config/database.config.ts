@@ -1,4 +1,4 @@
-import dotenv from 'dotenv'
+import * as dotenv from 'dotenv'
 
 dotenv.config()
 const database = {
@@ -7,7 +7,7 @@ const database = {
       host: "localhost",
       port: 5432,
       username: "godwinekuma",
-      password: "",
+      password: "mysecretpwd",
       database: "invoiceapp",
       entities: [
         "dist/**/*.model.js"
